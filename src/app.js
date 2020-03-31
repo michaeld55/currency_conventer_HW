@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     el: "#app",
     data:{
         currencies: {},
-        reversedCurrencies: {},
         selectedCurrency: null,
     },
 
@@ -17,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     mounted(){
         this.getCurrencies();
-        // this.flipCurrencies();
+        this.flip();
     },
 
     methods: {
@@ -26,6 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(response => response.json())
             .then(currencies => this.currencies = currencies)
         },
+        flip: function(rate){
+          let result = 0
+          return result = 1 / rate
+        }
       }
   })
 })
