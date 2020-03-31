@@ -27,7 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         flip: function(rate){
           let result = 0
-          return result = 1 / rate
+          result = 1 / rate
+          return result.toFixed(2);
         }
       }
   })
