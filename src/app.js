@@ -35,4 +35,4 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 
-// Allow cross-currency conversions - from non-base to non-base currencies. (e.g. from GBP to USD)git
+// Allow cross-currency conversions - from non-base to non-base currencies. (e.g. from GBP to USD)
